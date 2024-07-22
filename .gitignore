@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+
+# Environment files
+.env
+.env.test
+
+# Service account key file
+pushnotification-ccb8e-firebase-adminsdk-1iro8-c82065694c.json
+
+
+
+
