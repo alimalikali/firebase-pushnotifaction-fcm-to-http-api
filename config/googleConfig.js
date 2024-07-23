@@ -4,7 +4,7 @@ const path = require("path");
 
 const SERVICE_ACCOUNT_PATH = path.join(
   __dirname,
-  "../pushnotification-ccb8e-firebase-adminsdk-1iro8-c82065694c.json"
+  "../service.json"
 );
 
 let serviceAccount;
@@ -29,3 +29,19 @@ const getAccessToken = async () => {
 };
 
 module.exports = { getAccessToken, serviceAccount };
+
+
+// const SERVICE_ACCOUNT_FILE = "./pushnotification-ccb8e-firebase-adminsdk-1iro8-c82065694c.json";
+// const serviceAccount = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_FILE));
+
+// const clientAuth = new JWT({
+//   email: serviceAccount.client_email,
+//   key: serviceAccount.private_key,
+//   scopes: ['https://www.googleapis.com/auth/firebase.messaging']
+// });
+
+// async function getAccessToken() {
+//   const tokens = await clientAuth.authorize();
+//   return tokens.access_token;
+// }
+
